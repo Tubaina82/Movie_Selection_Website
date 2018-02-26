@@ -15,4 +15,4 @@ git clone https://github.com/Tubaina82/Movie_Selection_Website.git
 ```
 python3 entertainment_center.py
 ```
-3. The command above should open your Web Browser, where you can see the movie selection and what the movie's trailer by clicking on any movie's poster.
+3. The command above should open your Web Browser, where you can see the movie selection and by clicking on any movie's poster, the movie's trailer.
