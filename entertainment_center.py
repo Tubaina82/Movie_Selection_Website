@@ -1,11 +1,12 @@
 import media
 import fresh_tomatoes
 
+# Creates movie instances
 sweet_november = media.Movie(
     "Sweet November",
     "Nelson Moss (Keanu Reeves) and Sara Deever (Charlize Theron) have nothing in common except an hour spent in DMV hell. Intrigued by each other, but not quite ready to commit, they settle on a rather unconventional courtship: a one-month trial, after which they'll go their separate ways. No expectations. No pressure. No strings attached. What neither of them counts on is falling in love.",
     "https://upload.wikimedia.org/wikipedia/en/1/1b/SweetNovember2.jpg",
-    "https://www.youtube.com/watch?v=ZxZRUJiYLps"
+    "https://www.youtube.com/watch?v=A7hkvdyG8x4"
 )
 
 titanic = media.Movie(
@@ -40,5 +41,18 @@ brokeback_montain = media.Movie(
     "Brokeback Montain",
     "In 1963, rodeo cowboy Jack Twist (Jake Gyllenhaal) and ranch hand Ennis Del Mar (Heath Ledger) are hired by rancher Joe Aguirre (Randy Quaid) as sheep herders in Wyoming. One night on Brokeback Mountain, Jack makes a drunken pass at Ennis that is eventually reciprocated. Though Ennis marries his longtime sweetheart, Alma (Michelle Williams), and Jack marries a fellow rodeo rider (Anne Hathaway), the two men keep up their tortured and sporadic affair over the course of 20 years.",
     "https://upload.wikimedia.org/wikipedia/en/a/a1/Brokeback_mountain.jpg",
-    "https://www.youtube.com/watch?v=lDz1fmeyHIA"
+    "https://www.youtube.com/watch?v=Tm4SlVWkdUU"
 )
+
+# Creates a list of the movie instances
+movies = [
+    sweet_november,
+    titanic,
+    saw,
+    black_swam,
+    x_men_origins,
+    brokeback_montain
+]
+
+# Calls fresh_tomatoes function, creating and rendering the HTML file with the movie selection
+fresh_tomatoes.open_movies_page(movies=movies)
